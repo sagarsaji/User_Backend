@@ -25,6 +25,7 @@ public class User {
 	private String phone;
 	private String conpassword;
 	private String type;
+	private String restname;
 	
 	public String getEmail() {
 		return email;
@@ -83,8 +84,16 @@ public class User {
 		this.type = type;
 	}
 
+	public String getRestname() {
+		return restname;
+	}
+
+	public void setRestname(String restname) {
+		this.restname = restname;
+	}
+
 	public User(String name, String username, String password, String email, String address, String phone,
-				String conpassword,String type) {
+				String conpassword, String type,String restname) {
 		super();
 		this.name = name;
 		this.username = username;
@@ -94,6 +103,7 @@ public class User {
 		this.phone = phone;
 		this.conpassword = conpassword;
 		this.type = type;
+		this.restname = restname;
 	}
 	public User() {
 		super();
